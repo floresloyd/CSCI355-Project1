@@ -6,31 +6,60 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="home.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src  = "index.js"></script>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <div class="navbar">
         <img class="nav-logo" src="./public/sb-logo.png">
         <div class="nav-links">
-            <a href="/index.html">Home</a>
-            <a href="/about/about.html">About</a>
-            <a href="/contact/contact.html">Contact</a>
-            <a href="/product-page/product-page.html">Product</a>
+            <a href="/CSCI355-Project1/index.html">Home</a>
+            <a href="/CSCI355-Project1/about/about.html">About</a>
+            <a href="/CSCI355-Project1/contact/contact.html">Contact</a>
+            <a href="/CSCI355-Project1/product-page/product-page.html">Product</a>
         </div>
     </div>
 
     <!-- Main content area -->
     <div class="main-content">
-        <!-- PUT BODY CONTENT HERE -->
-        <h1> HOME </h1>
+        <!-- Video container -->
+        <div class="video-container">
+            <video id="background-video" src="/CSCI355-Project1/public/videone.mp4" loop autoplay muted>
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-description">
+                <p>Hand Crafted, 100% Natural Wax and Oil</p>
+                <br>
+                <a href="/CSCI355-Project1/product-page/product-page.html" class="support-button">Support Locally Owned Business</a>
+            </div>
+        </div>
+        <br>
+        <!-- Carousel Container -->
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="/CSCI355-Project1/public/candle1.jpg" alt="Candle 1">
+                <img src="/CSCI355-Project1/public/candle2.jpg" alt="Candle 2">
+                <img src="/CSCI355-Project1/public/candle3.jpg" alt="Candle 3">
+                <img src="/CSCI355-Project1/public/candle2.jpg" alt="Candle 2">
+                <!-- Add more images as needed -->
+            </div>
+            <a href="/CSCI355-Project1/product-page/product-page.html" class="browse-catalog">Browse Catalog</a>
+            <div class="carousel-navigation">
+                <div class="prev">&#10094;</div> <!-- Left arrow -->
+                <div class="next">&#10095;</div> <!-- Right arrow -->
+            </div>
+        </div>
     </div>
+
+    <br>
 
     <!-- Footer -->
     <div class="footer">
         <p>Copyright &copy; 2024 Sueno Blanco. All Rights Reserved.</p>
-        <a href="https://www.instagram.com/"><img class="social-media-icon-link" src="/public/instagram-icon.png"> </a>
-        <a href="https://www.shopify.com/"><img class="social-media-icon-link" src="/public/shopify-icon.png"> </a>
+        <a href="https://www.instagram.com/"><img class="social-media-icon-link" src="/CSCI355-Project1/public/instagram-icon.png"> </a>
+        <a href="https://www.shopify.com/"><img class="social-media-icon-link" src="/CSCI355-Project1/public/shopify-icon.png"> </a>
     </div>
 
 </body>
