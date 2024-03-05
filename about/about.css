@@ -1,58 +1,102 @@
 /** GLOBAL STYLES **/
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* BODY TAKES ENTIRE SCREEN */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* BODY TAKES ENTIRE SCREEN */
 }
-
 
 /** NAVBAR **/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: black;
 }
 
 .nav-logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: black; 
-    transition: color 0.5s ease; 
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+  color: white;
 }
 
 .navbar a:hover {
-    color: grey; 
+  color: grey;
 }
 
 /** BODY - MAIN CONTENT **/
-.main-content{
-    text-align: center;
+.main-content {
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
 }
 
+.content-container {
+  display: flex;
+  align-items: center; /* Vertically align items in the center */
+  max-width: 100%; /* Ensure the container does not exceed the width of its parent */
+  gap: 20px;
+}
+
+.content-img {
+  width: 100%; /* Makes the image fully fill the container */
+  height: auto; /* Keeps the image aspect ratio */
+}
+
+.content-text {
+  max-width: 50%;
+}
+
+/** REVERSE CONTAINER (IMAGE ON RIGHT) **/
+.content-container-reverse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.reverse-content,
+.reverse-image {
+  width: 50%;
+}
+
+.reverse-image img {
+  width: 100%;
+  height: auto;
+}
+
+.reverse-content {
+  margin-right: 20px;
+}
 
 /** FOOTER **/
-.footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+.footer {
+  position: fixed; /** FIX POSITION AT THE BOTTOM OF THE PAGE */
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.social-media-icon-link{
-    height: 25px;
-    width: 25px;
-    margin: 10px 10px 0px 25px;
+.social-media-icon-link {
+  height: 25px;
+  width: 25px;
+  margin: 10px 10px 0px 25px;
 }

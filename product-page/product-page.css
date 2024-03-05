@@ -13,6 +13,7 @@ html, body {
     align-items: center;
     gap: 20px;
     padding: 10px;
+    background-color: black;
 }
 
 .nav-logo {
@@ -28,7 +29,7 @@ html, body {
 
 .navbar a {
     text-decoration: none;
-    color: black; 
+    color: white; 
     transition: color 0.5s ease; 
 }
 

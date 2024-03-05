@@ -63,7 +63,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; /* BODY TAKES ENTIRE SCREEN */
-    background-image: url('/CSCI355-Project1/public/background-img.jpg'); /* Sets the background image */
+    background-image: url('/public/background-img.jpg'); /* Sets the background image */
     background-size: cover; /* Ensures the background covers the entire element */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the background image from repeating */

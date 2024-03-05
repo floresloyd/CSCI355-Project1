@@ -1,58 +1,105 @@
 /** GLOBAL STYLES **/
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* BODY TAKES ENTIRE SCREEN */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* BODY TAKES ENTIRE SCREEN */
+  background-image: URL("../public/background-img.jpg");
 }
-
 
 /** NAVBAR **/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: black;
 }
 
 .nav-logo {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
-
 .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: black; 
-    transition: color 0.5s ease; 
+  text-decoration: none;
+  color: black;
+  transition: color 0.5s ease;
+  color: white;
 }
 
 .navbar a:hover {
-    color: grey; 
+  color: grey;
 }
 
 /** BODY - MAIN CONTENT **/
-.main-content{
-    text-align: center;
+.main-content {
+  text-align: center;
 }
 
+/* FORM STYLING */
+form {
+  background-color: black;
+  padding: 20px;
+  border: 1px dashed white;
+  color: white;
+  margin: 5% 20% 10% 20%;
+}
+
+/* MAKE OPTIONS INLINE SO THAT RADIO AND CHECKBOX OPTIONS DONT TAKE ONE SPACE EACH */
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.inline-group label,
+.inline-group input {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.inline-group input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+/** STYLING FOR TEXT AREA AND BUTTON */
+.form-group textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Style for your submit button */
+button {
+  padding: 10px;
+  width: 30%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 /** FOOTER **/
-.footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.footer {
+  position: fixed; /** FIX POSITION AT THE BOTTOM OF THE PAGE */
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.social-media-icon-link{
-    height: 25px;
-    width: 25px;
-    margin: 10px 10px 0px 25px;
+.social-media-icon-link {
+  height: 25px;
+  width: 25px;
+  margin: 10px 10px 0px 25px;
 }

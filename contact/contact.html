@@ -6,12 +6,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="contact.js"></script>
 
 </head>
 <body>
     <!-- NAVBAR -->
     <div class="navbar">
-        <img class="nav-logo" src="../public/sb-logo-no-bg.png">
+        <img class="nav-logo" src="../public/sb-logo.png">
         <div class="nav-links">
             <a href="../index.html">Home</a>
             <a href="/about/about.html">About</a>
@@ -20,10 +22,47 @@
         </div>
     </div>
 
+
     <!-- Main content area -->
     <div class="main-content">
         <!-- PUT BODY CONTENT HERE -->
-        <h1> CONTACT </h1>
+        <h1> Get in touch </h1>
+        <div class="form-container">
+            <form>
+                <form>
+                    <div class="form-group">
+                        <label for="help">How can we help?</label>
+                        <div class="inline-group">
+                            <input type="radio" id="technical_support" name="help_type" value="technical_support">
+                            <label for="technical_support">Technical Support</label>
+                            <input type="radio" id="product_support" name="help_type" value="product_support">
+                            <label for="product_support">Product Support</label>
+                        </div>
+                    </div>
+                    <div class="form-group inline-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group inline-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group inline-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Preferred Contact Method</label>
+                        <div class="inline-group">
+                            <input type="checkbox" id="contact_email" name="preferred_contact" value="email">
+                            <label for="contact_email">Email</label>
+                            <input type="checkbox" id="contact_phone" name="preferred_contact" value="phone">
+                            <label for="contact_phone">Phone</label>
+                        </div>
+                        <textarea name="message" id="message" rows="5" cols="30" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
     </div>
 
     <!-- Footer -->
