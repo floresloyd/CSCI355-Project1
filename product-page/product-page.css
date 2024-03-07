@@ -57,3 +57,40 @@ html, body {
     width: 25px;
     margin: 10px 10px 0px 25px;
 }
+/** Product page **/
+/* Container for the grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with flexible column widths */
+    gap: 20px; /* Spacing between grid items */
+}
+
+/* Styling for each grid item */
+.item {
+    border: 1px solid #ccc; /* Border around each item */
+    padding: 10px; /* Padding inside each item */
+    text-align: center; /* Center align text */
+    background-color: #f9f9f9; /* Background color of each item */
+}
+
+/* Style for product name */
+.item h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Font size of product name */
+}
+
+/* Style for product description */
+.item p {
+    margin: 5px 0; /* Margin for spacing */
+    font-size: 14px; /* Font size of description */
+}
+
+/* Style for price */
+.item .price {
+    font-weight: bold; /* Bold font for price */
+}
+
+/* Style for availability */
+.item .availability {
+    color: #007bff; /* Color for availability status */
+}
