@@ -40,29 +40,16 @@ html, body {
 /** BODY - MAIN CONTENT **/
 .main-content{
     text-align: center;
+    margin-bottom: 10px;
 }
 
-
-/** FOOTER **/
-.footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.social-media-icon-link{
-    height: 25px;
-    width: 25px;
-    margin: 10px 10px 0px 25px;
-}
 /** Product page **/
 /* Container for the grid */
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with flexible column widths */
     gap: 20px; /* Spacing between grid items */
+    margin-bottom: 10px;
 }
 
 /* Styling for each grid item */
@@ -93,4 +80,25 @@ html, body {
 /* Style for availability */
 .item .availability {
     color: #007bff; /* Color for availability status */
+}
+
+.item image{
+    width: 50px;
+    height: 50px;
+}
+
+
+/** FOOTER **/
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-media-icon-link{
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px 0px 25px;
 }
