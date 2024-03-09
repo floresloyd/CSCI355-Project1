@@ -74,12 +74,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px; /* Adjust as needed */
-    padding: 15px; /* Add padding */
+    margin-top: 20px; 
+    padding: 15px; 
     border: 1px solid #ddd; 
     background-color: #f5f5f5; /* Light grey background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-    border-radius: 15px; /* Optional: rounds the corners of the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Rounds the corners of the box */
     overflow: hidden; /* Ensures the video corners are also rounded */
     max-width: 1300px; /* Maximum width of the video container */
     width: 100%; /* Ensures it takes up 100% of the max-width */
@@ -108,7 +108,7 @@ body {
 .video-description p {
     margin: 0;
     padding: 5px;
-    font-size: 1em; /* Adjust as needed */
+    font-size: 1em;
     font-family: sans-serif;
     font-weight: 700; /* Makes the text bold */
     overflow: hidden; /* Ensures the content is clipped */
@@ -131,7 +131,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 10px;
-    border-radius: 5px; /* Optional: rounds the corners of the button */
+    border-radius: 5px; 
     text-decoration: none; /* Removes underline */
     display: inline-block; /* Aligns the button correctly */
 }
@@ -163,7 +163,6 @@ body {
 }
 /* Carousel Container - Reuse styles from .video-container */
 .carousel-container {
-    /* Same styles as .video-container */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,15 +196,11 @@ body {
     scroll-snap-align: start;
     flex-shrink: 0;
     flex: 0 0 auto;
-    width: 100%;
-    height: auto;
-}
-
-.carousel-slide img {
-    max-width: 100%;
-    display: block;
-    width: 100%; /* Adjust as needed */
+    width: 470px;
+    height: 500px;
     transition: transform 0.5s ease-in-out;
+    margin: 0 15px;
+
 }
 
 .carousel-navigation .prev,
@@ -217,7 +212,7 @@ body {
     font-size: 36px; /* Increase the size for better visibility */
     color: black; /* Change color for contrast */
     background-color: rgba(255, 255, 255, 0.5); /* Add a semi-transparent background */
-    padding: 10px; /* Add some padding */
+    padding: 10px;
     border-radius: 50%; /* Optional: makes the arrows circular */
     z-index: 10;
 }
@@ -226,17 +221,17 @@ body {
 .carousel-navigation .next { right: 15px; }
 
 .browse-catalog {
-    font-family: 'Roboto', sans-serif; /* Or any other modern font */
-    color: #ffffff; /* Choose a color that stands out against your carousel background */
+    font-family: 'Roboto', sans-serif; 
+    color: #ffffff; 
     background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-    letter-spacing: 1px; /* More letter-spacing makes it look modern */
+    letter-spacing: 1px; 
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 25px; /* Rounded edges */
     text-decoration: none; /* Remove underline */
     font-weight: bold;
-    position: absolute; /* Position it within the carousel container */
+    position: absolute;
     bottom: 20px; /* Distance from the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center alignment trick */
