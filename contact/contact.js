@@ -24,3 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Message: ', message)
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+  
+    inputs.forEach(input => {
+      const waveSpan = document.createElement('span');
+      waveSpan.classList.add('wave-animation');
+      input.insertAdjacentElement('afterend', waveSpan);
+  
+      input.addEventListener('focus', () => {
+        waveSpan.style.transform = 'scaleX(1)';
+      });
+  
+      input.addEventListener('blur', () => {
+        waveSpan.style.transform = 'scaleX(0)';
+      });
+    });
+  });

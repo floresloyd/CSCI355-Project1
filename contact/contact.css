@@ -43,49 +43,80 @@ body {
   text-align: center;
 }
 
-/* FORM STYLING */
-form {
-  background-color: black;
-  padding: 20px;
-  border: 1px dashed white;
-  color: white;
-  margin: 5% 20% 10% 20%;
+/** FORM MODERN STYLING **/
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-/* MAKE OPTIONS INLINE SO THAT RADIO AND CHECKBOX OPTIONS DONT TAKE ONE SPACE EACH */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
 
 .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
-.inline-group label,
-.inline-group input {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.inline-group input[type="checkbox"] {
-  margin-top: 5px;
-}
-
-/** STYLING FOR TEXT AREA AND BUTTON */
-.form-group textarea,
-button {
+.form-group label {
   display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
   width: 100%;
-  margin-top: 5px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s;
 }
 
-/* Style for your submit button */
-button {
-  padding: 10px;
-  width: 30%;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
 }
 
+.form-group span.wave-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3498db;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.form-group input:focus + span.wave-animation,
+.form-group textarea:focus + span.wave-animation {
+  transform: scaleX(1);
+}
+
+.submit-btn {
+  padding: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #2980b9;
+}
 /** FOOTER **/
 .footer {
   position: fixed; /** FIX POSITION AT THE BOTTOM OF THE PAGE */

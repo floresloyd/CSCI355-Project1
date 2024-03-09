@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sueno Blanco</title>
     <link rel="stylesheet" type="text/css" href="lookbook.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="icon" href="/public/sb-logo.png">
 </head>
 <body>
@@ -19,47 +20,120 @@
             <a href="/lookbook/lookbook.html">Lookbook</a>
         </div>
     </div>
-
+        
+            
     <!-- Main content area -->
-    <h1 style="text-align: center;"> Lookbook </h1>
-
     <div class="content-container">
+        
+        <!-- HOW TO ORDER // PROGRESS STEPS -->
+        <div class="container">
+            <h2>How to Order</h2>
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">Pick a Scent</div>
+                <div class="circle">Pick a Jar</div>
+                <div class="circle">Order</div>
+                <div class="circle">Receive</div>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="prev" disabled>Prev</button>
+                <button class="btn" id="next">Next</button>
+            </div>
+        </div>
+
+        <!-- LOOK BOOK // EXPANDING CARDS -->
         <div class="expanding-cards-container">
-                <!-- LOOK BOOK // EXPANDING CARDS -->
             <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-breeze.png');">
-                <h3> Scent </h3>
+                <h3> Summer Breeze </h3>
             </div>
 
             <div class="expanding-cards" style="background-image: url('/lookbook/images/bfast-crunch.jpg');">
-                <h3> Scent 2 </h3>
+                <h3> Breakfast Crunch </h3>
             </div>
 
             <div class="expanding-cards" style="background-image: url('/lookbook/images/holidaze.png');">
-                <h3> Scent 3</h3>
+                <h3> Holidaze </h3>
             </div>
 
             <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-vibes.png');">
-                <h3> Scent 4</h3>
+                <h3> Summer Vibes </h3>
             </div>
-
         </div>
 
-    
-       <!-- HOW TO ORDER // PROGRESS STEPS -->
-       <div class="container">
-        <h1> How to order</h1>
-        <div class="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="circle active">Pick a Scent</div>
-            <div class="circle">Pick a Jar</div>
-            <div class="circle">Order</div>
-            <div class="circle">Receive</div>
-        </div>
-        <div class="buttons">
-            <button class="btn" id="prev" disabled>Prev</button>
-            <button class="btn" id="next">Next</button>
-        </div>
+        <h1 style="text-align: center;">Frequently Asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title">
+            Do they last long?
+        </h3>
+
+        <p class="faq-text">
+            Candles can stay lit for about 24 hours.
+        </p>
+
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h3 class="faq-title">
+          Do you ship?
+        </h3>
+        <p class="faq-text">
+          Yes we do! It's up to the buyer to cover shipping costs! 
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          What are the candles made out of? 
+        </h3>
+        <p class="faq-text">
+            100% all natural soy wax. Going as far as keeping the wicks lead-free. A pure and clean scent without additive and chemical dye-free
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          Where are the candles manufactured?
+        </h3>
+        <p class="faq-text">
+          A local family-owned business operates Sueno Blanco and all the candles are made at home in our basement in Howard Beach, N.Y.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="faq">
+        <h3 class="faq-title">
+          Where can I order?
+        </h3>
+        <p class="faq-text">
+            On our shopify page or instagram page!
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
     </div>
+
+
+    </div>
+
+   
 
     <!-- Footer -->
     <div class="footer">
