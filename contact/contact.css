@@ -39,8 +39,15 @@ body {
 }
 
 /** BODY - MAIN CONTENT **/
-.main-content {
+.main-content h1 {
+  font-family: 'Roboto', sans-serif; /* Uses the Roboto font for a clean look */
   text-align: center;
+  font-size: 2.5rem; /* Increases the size to make it a focal point */
+  color: #fff; /* Changes the text color to white for contrast against the dark background */
+  text-transform: uppercase; /* Capitalizes all letters for impact */
+  letter-spacing: 5px; /* Spaces out the letters for a refined appearance */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Adds a subtle shadow for depth */
+  margin-bottom: 2rem; /* Adds space below the title */
 }
 
 /** FORM MODERN STYLING **/

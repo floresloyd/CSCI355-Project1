@@ -3,6 +3,9 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%; /* BODY TAKES ENTIRE SCREEN */
+    background-image: url('/public/bkgrndimg.jpg');
+    background-size: cover; 
+    background-position: center; 
 }
 
 
@@ -42,16 +45,31 @@ html, body {
     text-align: center;
     margin-bottom: 10px;
 }
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
+    color: white; /* Dark grey color for better readability */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    letter-spacing: 1px; /* Space out letters slightly */
+    font-weight: bold; /* Bold font weight */
+    margin-top: 20px; /* Add space above the title */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
 
 /** Product page **/
 /* Container for the grid */
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with flexible column widths */
-    gap: 20px; /* Spacing between grid items */
-    margin-bottom: 10px;
-    margin-left: 500px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+    align-content: center; 
+    padding: 20px; 
+    margin: auto; 
+    width: 900px;
 }
+
 
 /* Styling for each grid item */
 .item {
@@ -91,13 +109,16 @@ html, body {
 
 
 /** FOOTER **/
-.footer{
+.footer {
+    position: fixed; /** FIX POSITION AT THE BOTTOM OF THE PAGE */
+    bottom: 0;
+    left: 0;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     width: 100%;
-}
+  }
 
 .social-media-icon-link{
     height: 25px;
