@@ -50,6 +50,7 @@ html, body {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid with flexible column widths */
     gap: 20px; /* Spacing between grid items */
     margin-bottom: 10px;
+    margin-left: 500px;
 }
 
 /* Styling for each grid item */
