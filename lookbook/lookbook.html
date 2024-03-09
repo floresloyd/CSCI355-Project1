@@ -22,25 +22,43 @@
 
     <!-- Main content area -->
     <h1 style="text-align: center;"> Lookbook </h1>
-    <div class="main-content">
-        <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-breeze.png');">
-            <h3> Scent </h3>
+
+    <div class="content-container">
+        <div class="expanding-cards-container">
+                <!-- LOOK BOOK // EXPANDING CARDS -->
+            <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-breeze.png');">
+                <h3> Scent </h3>
+            </div>
+
+            <div class="expanding-cards" style="background-image: url('/lookbook/images/bfast-crunch.jpg');">
+                <h3> Scent 2 </h3>
+            </div>
+
+            <div class="expanding-cards" style="background-image: url('/lookbook/images/holidaze.png');">
+                <h3> Scent 3</h3>
+            </div>
+
+            <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-vibes.png');">
+                <h3> Scent 4</h3>
+            </div>
+
         </div>
 
-        <div class="expanding-cards" style="background-image: url('/lookbook/images/bfast-crunch.jpg');">
-            <h3> Scent 2 </h3>
+    
+       <!-- HOW TO ORDER // PROGRESS STEPS -->
+       <div class="container">
+        <h1> How to order</h1>
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active">Pick a Scent</div>
+            <div class="circle">Pick a Jar</div>
+            <div class="circle">Order</div>
+            <div class="circle">Receive</div>
         </div>
-
-        <div class="expanding-cards" style="background-image: url('/lookbook/images/holidaze.png');">
-            <h3> Scent 3</h3>
+        <div class="buttons">
+            <button class="btn" id="prev" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
         </div>
-
-        <div class="expanding-cards" style="background-image: url('/lookbook/images/summer-vibes.png');">
-            <h3> Scent 4</h3>
-        </div>
-
-        
-        <!-- Repeat for other cards as needed -->
     </div>
 
     <!-- Footer -->
